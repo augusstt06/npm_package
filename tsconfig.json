@@ -11,7 +11,6 @@
     "allowImportingTsExtensions": true,
     "resolveJsonModule": true,
     "isolatedModules": true,
-    "noEmit": true,
     "jsx": "react-jsx",
 
     /* Linting */
@@ -22,8 +21,11 @@
     "baseUrl": ".",
     "paths": {
       "@/*": ["src/*"]
-    }
+    },
+    /* d.ts */
+    "declaration": true,
+    "emitDeclarationOnly": true
   },
-  "include": ["src"],
+  "include": ["src/lib"],
   "references": [{ "path": "./tsconfig.node.json" }]
 }
